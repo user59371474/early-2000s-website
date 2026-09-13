@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guestbook - ★ My Cool Website ★</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #f2f2ff;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    .wrapper {
+      width: 800px;
+      background-color: #f2f2ff;
+      min-height: 900px;
+      position: relative;
+    }
+    .header {
+      background-color: #1a3380;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .header h1 {
+      color: #ffff33;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .nav {
+      background-color: #3366cc;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      gap: 20px;
+    }
+    .nav a {
+      display: inline-block;
+      background-color: #b2d9ff;
+      color: #1a1a66;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 6px 18px;
+      border-radius: 4px;
+      border: 1px solid #99bbdd;
+    }
+    .nav a:hover { background-color: #99ccff; }
+    .nav a.active { background-color: #ffff99; border-color: #cc9900; }
+    .main {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+    .content {
+      width: 520px;
+      background-color: #ffffff;
+      border: 2px solid #9999cc;
+      padding: 20px;
+      min-height: 550px;
+    }
+    .content h2 {
+      color: #cc1a1a;
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+    .content p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+    .entry {
+      background: #f8f8ff;
+      border: 1px solid #aabbcc;
+      padding: 12px;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+    .entry .name {
+      font-weight: bold;
+      color: #1a3380;
+    }
+    .entry .date {
+      color: #666;
+      font-size: 11px;
+    }
+    .entry .msg {
+      margin-top: 6px;
+    }
+    .form-box {
+      background: #e6ffe6;
+      border: 2px solid #66aa66;
+      padding: 16px;
+      margin-top: 20px;
+    }
+    .form-box h3 {
+      color: #006600;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .form-box label {
+      display: block;
+      font-size: 13px;
+      margin-top: 8px;
+      margin-bottom: 2px;
+    }
+    .form-box input, .form-box textarea {
+      width: 100%;
+      padding: 4px;
+      font-size: 13px;
+      border: 1px solid #99bb99;
+      font-family: Arial, sans-serif;
+    }
+    .form-box textarea {
+      height: 60px;
+      resize: vertical;
+    }
+    .form-box button {
+      margin-top: 10px;
+      background: #99cc99;
+      border: 2px outset #66aa66;
+      padding: 4px 16px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .form-box button:active {
+      border-style: inset;
+    }
+    .hr {
+      border: none;
+      border-top: 2px solid #8080b2;
+      margin: 20px 0;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #fff2cc;
+      border: 2px solid #cc9933;
+      padding: 16px;
+      min-height: 550px;
+    }
+    .sidebar h3 {
+      color: #993300;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+    .sidebar ul {
+      list-style: none;
+      font-size: 13px;
+      color: #1a1a80;
+    }
+    .sidebar li { margin-bottom: 6px; }
+    .sidebar a {
+      color: #1a1a80;
+      text-decoration: underline;
+    }
+    .sidebar a:hover { color: #cc0000; }
+    .footer {
+      background-color: #1a3380;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #e6e6e6;
+      font-size: 11px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .note {
+      font-size: 12px;
+      color: #666;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>★ My Cool Website ★</h1>
+    </div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="photos.html">Photos</a>
+      <a href="guestbook.html" class="active">Guestbook</a>
+      <a href="links.html">Links</a>
+    </div>
+    <div class="main">
+      <div class="content">
+        <h2>Guestbook</h2>
+        <p>Please sign my guestbook! I love reading messages from visitors.</p>
+
+        <div class="entry">
+          <div class="name">CoolGuy99</div>
+          <div class="date">March 12, 2003</div>
+          <div class="msg">Awesome site!!! The design is so cool. Keep it up! ★★★</div>
+        </div>
+
+        <div class="entry">
+          <div class="name">AnimeFan</div>
+          <div class="date">March 8, 2003</div>
+          <div class="msg">Nice homepage. I also like collecting stickers haha. Check out my site too!</div>
+        </div>
+
+        <div class="entry">
+          <div class="name">MIDI_Lover</div>
+          <div class="date">February 28, 2003</div>
+          <div class="msg">Your links page has some good MIDI stuff. Thanks for sharing!</div>
+        </div>
+
+        <div class="entry">
+          <div class="name">WebMaster_X</div>
+          <div class="date">February 15, 2003</div>
+          <div class="msg">First! Congrats on the new site. Looking forward to more pages.</div>
+        </div>
+
+        <div class="form-box">
+          <h3>Sign the Guestbook</h3>
+          <form onsubmit="alert('Thanks for signing! (This is a demo - messages are not actually saved yet.)'); return false;">
+            <label>Your Name:</label>
+            <input type="text" name="name" placeholder="Enter your name">
+            <label>Your Message:</label>
+            <textarea name="message" placeholder="Write something nice..."></textarea>
+            <button type="submit">Sign Guestbook!</button>
+          </form>
+          <p class="note">★ Messages are moderated. Please be nice!</p>
+        </div>
+      </div>
+      <div class="sidebar">
+        <h3>Cool Links</h3>
+        <ul>
+          <li>• <a href="links.html">My Friend's Site</a></li>
+          <li>• <a href="links.html">Cool Music Page</a></li>
+          <li>• <a href="links.html">Free MIDI Files</a></li>
+          <li>• <a href="links.html">Anime Pictures</a></li>
+          <li>• <a href="links.html">Web Rings</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      © 2003 My Cool Website | Best viewed in Internet Explorer 6 | 800x600
+    </div>
+  </div>
+</body>
+</html>
