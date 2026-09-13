@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>★ My Cool Website ★</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f2f2ff;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    .wrapper {
+      width: 800px;
+      background-color: #f2f2ff;
+      min-height: 900px;
+      position: relative;
+    }
+    /* Header */
+    .header {
+      background-color: #1a3380;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .header h1 {
+      color: #ffff33;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    /* Navigation */
+    .nav {
+      background-color: #3366cc;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      gap: 20px;
+    }
+    .nav a {
+      display: inline-block;
+      background-color: #b2d9ff;
+      color: #1a1a66;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 6px 18px;
+      border-radius: 4px;
+      border: 1px solid #99bbdd;
+    }
+    .nav a:hover {
+      background-color: #99ccff;
+    }
+    /* Main content layout */
+    .main {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+    .content {
+      width: 520px;
+      background-color: #ffffff;
+      border: 2px solid #9999cc;
+      padding: 20px;
+      min-height: 550px;
+    }
+    .content h2 {
+      color: #cc1a1a;
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+    .content p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    .hr {
+      border: none;
+      border-top: 2px solid #8080b2;
+      margin: 20px 0;
+    }
+    .counter {
+      color: #1a661a;
+      font-size: 13px;
+      font-weight: bold;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background-color: #fff2cc;
+      border: 2px solid #cc9933;
+      padding: 16px;
+      min-height: 550px;
+    }
+    .sidebar h3 {
+      color: #993300;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+    .sidebar ul {
+      list-style: none;
+      font-size: 13px;
+      color: #1a1a80;
+    }
+    .sidebar li {
+      margin-bottom: 6px;
+    }
+    .sidebar a {
+      color: #1a1a80;
+      text-decoration: underline;
+    }
+    .sidebar a:hover {
+      color: #cc0000;
+    }
+    /* Footer */
+    .footer {
+      background-color: #1a3380;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #e6e6e6;
+      font-size: 11px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    /* Under construction style */
+    .under-construction {
+      color: #cc1a1a;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <div class="header">
+      <h1>★ My Cool Website ★</h1>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Photos</a>
+      <a href="#">Guestbook</a>
+      <a href="#">Links</a>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+      <div class="content">
+        <h2>Welcome to My Homepage!</h2>
+        <p>Hi everyone! Thanks for visiting my website.</p>
+        <p>This is my personal homepage made in 2003 style.</p>
+        <br>
+        <p>I like computers, music, and collecting stickers.</p>
+        <p>Please sign my guestbook before you leave!</p>
+        <p class="under-construction">★★★ Under Construction ★★★</p>
+        <hr class="hr">
+        <p class="counter">You are visitor number: 00,042</p>
+      </div>
+
+      <div class="sidebar">
+        <h3>Cool Links</h3>
+        <ul>
+          <li>• <a href="#">My Friend's Site</a></li>
+          <li>• <a href="#">Cool Music Page</a></li>
+          <li>• <a href="#">Free MIDI Files</a></li>
+          <li>• <a href="#">Anime Pictures</a></li>
+          <li>• <a href="#">Web Rings</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      © 2003 My Cool Website | Best viewed in Internet Explorer 6 | 800x600
+    </div>
+  </div>
+</body>
+</html>
