@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - ★ My Cool Website ★</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #f2f2ff;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    .wrapper {
+      width: 800px;
+      background-color: #f2f2ff;
+      min-height: 900px;
+      position: relative;
+    }
+    .header {
+      background-color: #1a3380;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .header h1 {
+      color: #ffff33;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .nav {
+      background-color: #3366cc;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      gap: 20px;
+    }
+    .nav a {
+      display: inline-block;
+      background-color: #b2d9ff;
+      color: #1a1a66;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 6px 18px;
+      border-radius: 4px;
+      border: 1px solid #99bbdd;
+    }
+    .nav a:hover { background-color: #99ccff; }
+    .nav a.active { background-color: #ffff99; border-color: #cc9900; }
+    .main {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+    .content {
+      width: 520px;
+      background-color: #ffffff;
+      border: 2px solid #9999cc;
+      padding: 20px;
+      min-height: 550px;
+    }
+    .content h2 {
+      color: #cc1a1a;
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+    .content p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+    .content ul {
+      margin: 12px 0 12px 20px;
+      font-size: 14px;
+    }
+    .content li { margin-bottom: 6px; }
+    .hr {
+      border: none;
+      border-top: 2px solid #8080b2;
+      margin: 20px 0;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #fff2cc;
+      border: 2px solid #cc9933;
+      padding: 16px;
+      min-height: 550px;
+    }
+    .sidebar h3 {
+      color: #993300;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+    .sidebar ul {
+      list-style: none;
+      font-size: 13px;
+      color: #1a1a80;
+    }
+    .sidebar li { margin-bottom: 6px; }
+    .sidebar a {
+      color: #1a1a80;
+      text-decoration: underline;
+    }
+    .sidebar a:hover { color: #cc0000; }
+    .footer {
+      background-color: #1a3380;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #e6e6e6;
+      font-size: 11px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .info-box {
+      background: #e6f0ff;
+      border: 1px solid #99aacc;
+      padding: 12px;
+      margin: 16px 0;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>★ My Cool Website ★</h1>
+    </div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="photos.html">Photos</a>
+      <a href="guestbook.html">Guestbook</a>
+      <a href="links.html">Links</a>
+    </div>
+    <div class="main">
+      <div class="content">
+        <h2>About Me</h2>
+        <p>Hi! My name is Alex and this is my personal homepage.</p>
+        <p>I started this website in 2003 because I wanted a place on the internet that was just mine.</p>
+        
+        <div class="info-box">
+          <strong>Quick Facts:</strong><br>
+          Age: 16<br>
+          Location: Somewhere on the internet<br>
+          Favorite color: Blue<br>
+          Computer: Windows XP + Internet Explorer 6
+        </div>
+
+        <p><strong>Things I like:</strong></p>
+        <ul>
+          <li>Computers and learning HTML</li>
+          <li>Collecting stickers and pins</li>
+          <li>Listening to music (especially MIDI files)</li>
+          <li>Anime and old video games</li>
+          <li>Making websites</li>
+        </ul>
+
+        <hr class="hr">
+        <p>Thanks for reading about me! Don't forget to sign my guestbook before you go.</p>
+      </div>
+      <div class="sidebar">
+        <h3>Cool Links</h3>
+        <ul>
+          <li>• <a href="links.html">My Friend's Site</a></li>
+          <li>• <a href="links.html">Cool Music Page</a></li>
+          <li>• <a href="links.html">Free MIDI Files</a></li>
+          <li>• <a href="links.html">Anime Pictures</a></li>
+          <li>• <a href="links.html">Web Rings</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      © 2003 My Cool Website | Best viewed in Internet Explorer 6 | 800x600
+    </div>
+  </div>
+</body>
+</html>
