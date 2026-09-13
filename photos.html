@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photos - ★ My Cool Website ★</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #f2f2ff;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    .wrapper {
+      width: 800px;
+      background-color: #f2f2ff;
+      min-height: 900px;
+      position: relative;
+    }
+    .header {
+      background-color: #1a3380;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .header h1 {
+      color: #ffff33;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .nav {
+      background-color: #3366cc;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      gap: 20px;
+    }
+    .nav a {
+      display: inline-block;
+      background-color: #b2d9ff;
+      color: #1a1a66;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 6px 18px;
+      border-radius: 4px;
+      border: 1px solid #99bbdd;
+    }
+    .nav a:hover { background-color: #99ccff; }
+    .nav a.active { background-color: #ffff99; border-color: #cc9900; }
+    .main {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+    .content {
+      width: 520px;
+      background-color: #ffffff;
+      border: 2px solid #9999cc;
+      padding: 20px;
+      min-height: 550px;
+    }
+    .content h2 {
+      color: #cc1a1a;
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+    .content p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+    .photo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .photo-box {
+      width: 140px;
+      height: 110px;
+      background: linear-gradient(135deg, #cce0ff, #99bbdd);
+      border: 3px solid #6688aa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: #334466;
+      text-align: center;
+      font-weight: bold;
+    }
+    .photo-box small {
+      display: block;
+      margin-top: 4px;
+      font-weight: normal;
+      font-size: 11px;
+    }
+    .hr {
+      border: none;
+      border-top: 2px solid #8080b2;
+      margin: 20px 0;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #fff2cc;
+      border: 2px solid #cc9933;
+      padding: 16px;
+      min-height: 550px;
+    }
+    .sidebar h3 {
+      color: #993300;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+    .sidebar ul {
+      list-style: none;
+      font-size: 13px;
+      color: #1a1a80;
+    }
+    .sidebar li { margin-bottom: 6px; }
+    .sidebar a {
+      color: #1a1a80;
+      text-decoration: underline;
+    }
+    .sidebar a:hover { color: #cc0000; }
+    .footer {
+      background-color: #1a3380;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #e6e6e6;
+      font-size: 11px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .note {
+      background: #fff8e6;
+      border: 1px dashed #cc9933;
+      padding: 10px;
+      font-size: 12px;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>★ My Cool Website ★</h1>
+    </div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="photos.html" class="active">Photos</a>
+      <a href="guestbook.html">Guestbook</a>
+      <a href="links.html">Links</a>
+    </div>
+    <div class="main">
+      <div class="content">
+        <h2>My Photo Gallery</h2>
+        <p>Here are some pictures from my life! (These are placeholders for now.)</p>
+        
+        <div class="photo-grid">
+          <div class="photo-box">My Desk<br><small>2003</small></div>
+          <div class="photo-box">Computer<br><small>Windows XP</small></div>
+          <div class="photo-box">Sticker Collection<br><small>Best ones</small></div>
+          <div class="photo-box">Favorite CD<br><small>Music</small></div>
+          <div class="photo-box">My Cat<br><small>Fluffy</small></div>
+          <div class="photo-box">School Trip<br><small>Summer</small></div>
+        </div>
+
+        <div class="note">
+          ★ Photos coming soon! Right now these are just placeholders.<br>
+          I still need to scan my real pictures.
+        </div>
+
+        <hr class="hr">
+        <p>Want to see more? Check back later — this page is still under construction!</p>
+      </div>
+      <div class="sidebar">
+        <h3>Cool Links</h3>
+        <ul>
+          <li>• <a href="links.html">My Friend's Site</a></li>
+          <li>• <a href="links.html">Cool Music Page</a></li>
+          <li>• <a href="links.html">Free MIDI Files</a></li>
+          <li>• <a href="links.html">Anime Pictures</a></li>
+          <li>• <a href="links.html">Web Rings</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      © 2003 My Cool Website | Best viewed in Internet Explorer 6 | 800x600
+    </div>
+  </div>
+</body>
+</html>
